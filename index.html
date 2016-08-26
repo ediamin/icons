@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Fonts test</title>
+		<link rel="stylesheet" href="_piconfonts.css" media="screen" title="no title" charset="utf-8">
+		<link rel="stylesheet" href="_picon-unicodes.css" media="screen" title="no title" charset="utf-8">
+		<link rel="stylesheet" href="_picons.css" media="screen" title="no title" charset="utf-8">
+	</head>
+	<body>
+		<button>Toggle frames</button>
+		<h1>Small Buttons</h1>
+		<div id="smallButtons"></div>
+		<h1>Big Buttons</h1>
+		<div id="bigButtons"></div>
+		<script src="jquery.js"></script>
+        <script>
+
+        $(document).ready(function(){
+			$.when($.get("_picon-unicodes.css"))
+            .done(function(response) {
+				var button = '',
+					bigButtons = '',
+					smallButtons = '';
+				var lines = response.split('\n');
+
+				for(var i = 0;i < lines.length;i++){
+					var string = lines[i],
+						substring = ".picon-sm",
+						substring2 = ".picon",
+						found = string.indexOf(substring),
+						found2 = string.indexOf(substring2),
+						string = string.replace('.','').replace(':before {','');
+
+
+					if(found !== -1){
+						console.log('smallButton: '+string);
+						button = '<a class="button" href="#"><span class="picon '+string+'"></span>'+string+'</a>';
+						smallButtons += button;
+					}
+
+					if(found2 !== -1 && found !== 0){
+						console.log('bigButton: '+string);
+						button = '<a class="button" href="#"><span class="picon '+string+'"></span>'+string+'</a>';
+						bigButtons += button;
+					}
+
+				}
+				$('#smallButtons').append(smallButtons);
+				$('#bigButtons').append(bigButtons);
+
+            });
+			$("button").click(function(){
+				$(".button, .picon").toggleClass("frame");
+			})
+		})
+
+		</script>
+	</body>
+</html>
