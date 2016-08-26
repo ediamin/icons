@@ -1,8 +1,8 @@
 @font-face {
     font-family: 'Pipedings';
-    src: url('../fonts/Pipedings-Regular.ttf') format('truetype'),
-         url('../fonts/Pipedings-Regular.woff2') format('woff2'),
-         url('../fonts/Pipedings-Regular.woff') format('woff');
+    src: url('../fonts/Pipedings.ttf') format('truetype'),
+         url('../fonts/Pipedings.woff2') format('woff2'),
+         url('../fonts/Pipedings.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }

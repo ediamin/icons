@@ -3,9 +3,9 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Fonts test</title>
-		<link rel="stylesheet" href="_piconfonts.css" media="screen" title="no title" charset="utf-8">
-		<link rel="stylesheet" href="_picon-unicodes.css" media="screen" title="no title" charset="utf-8">
-		<link rel="stylesheet" href="_picons.css" media="screen" title="no title" charset="utf-8">
+		<link rel="stylesheet" href="./css/_piconfonts.css" media="screen" title="no title" charset="utf-8">
+		<link rel="stylesheet" href="./css/_picon-unicodes.css" media="screen" title="no title" charset="utf-8">
+		<link rel="stylesheet" href="./css/_picons.css" media="screen" title="no title" charset="utf-8">
 	</head>
 	<body>
 		<button>Toggle frames</button>
@@ -13,11 +13,11 @@
 		<div id="smallButtons"></div>
 		<h1>Big Buttons</h1>
 		<div id="bigButtons"></div>
-		<script src="jquery.js"></script>
+		<script src="js/jquery.js"></script>
         <script>
 
         $(document).ready(function(){
-			$.when($.get("_picon-unicodes.css"))
+			$.when($.get("css/_picon-unicodes.css"))
             .done(function(response) {
 				var button = '',
 					bigButtons = '',
