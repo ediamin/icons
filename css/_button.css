@@ -1,0 +1,43 @@
+.button-example{
+	display: inline-flex;
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: -webkit-inline-flex;
+	align-items: center;
+	font-size: 0.875rem;
+	line-height:1;
+	vertical-align:top;
+	background: #eee;
+	padding:8px;
+	height:32px;
+	box-sizing: border-box;
+	border-radius:3px;
+	box-shadow: inset 0 0 0 1px rgba(0,0,0,0.1);
+	overflow:hidden;
+}
+.button-example span{
+	flex:1 0 1;
+	align-items:center;
+}
+.button-example span:first-child{
+	padding-left:0px;
+}
+.button-example span:last-child{
+	padding-right:0px;
+}
+.button-example span{
+	padding:0 8px;
+}
+.button-example span.picon{
+	padding:0;
+}
+.button-example span.picon:only-of-type{
+	padding:0;
+}
+.button-example span.picon{
+	margin:0;
+}
+.button-small{
+	height:24px;
+	padding:4px;
+}
