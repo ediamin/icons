@@ -585,7 +585,7 @@ top:-2px;
 
 .picon-sm-ac-bell:before {
 content: '\F122';
-top:-2px;
+top:-1px;
 }
 
 .picon-sm-ac-brush:before {
@@ -600,12 +600,12 @@ top:-2px;
 
 .picon-sm-ac-bulb:before {
 content: '\F125';
-top:-3px;
+top:-2px;
 }
 
 .picon-sm-ac-calendar:before {
 content: '\F126';
-top:-3px;
+top:-2px;
 }
 
 .picon-sm-ac-call:before {
@@ -810,17 +810,17 @@ top:-1px;
 
 .picon-sm-calendar:before {
 content: '\F1B2';
-top:-2px;
+top:-1px;
 }
 
 .picon-sm-check:before {
 content: '\F19C';
-top:-3px;
+top:-2px;
 }
 
 .picon-sm-check-done:before {
 content: '\F19B';
-top:-3px;
+top:-2px;
 }
 
 .picon-sm-cogs:before {
@@ -840,7 +840,7 @@ top:-2px;
 
 .picon-sm-deal:before {
 content: '\F19E';
-top:-2px;
+top:-1px;
 }
 
 .picon-sm-filter:before {
@@ -890,7 +890,7 @@ top:-2px;
 
 .picon-sm-organization:before {
 content: '\F1A1';
-top:-3px;
+top:-2px;
 }
 
 .picon-sm-pencil:before {
@@ -910,7 +910,7 @@ top:-2px;
 
 .picon-sm-plus:before {
 content: '\F1A4';
-top:-3px;
+top:-2px;
 }
 
 .picon-sm-reply:before {
@@ -955,7 +955,43 @@ top:-1px;
 
 .picon-sm-unlocked:before {
 content: '\F1E1';
-top:-2px;
+top:-1px;
+}
+
+.picon-sm-email:before {
+content: '\F302';
+top:-1px;
+
+}
+
+.picon-sm-expand:before {
+content: '\F303';
+top:-1px;
+}
+
+.picon-sm-collapse:before {
+content: '\F300';
+top:-1px;
+}
+
+.picon-sm-notes:before {
+content: '\F305';
+top:-1px;
+}
+
+.picon-sm-product:before {
+content: '\F306';
+top:-1px;
+}
+
+.picon-sm-files:before {
+content: '\F304';
+top:-1px;
+}
+
+.picon-sm-ellipsis:before {
+content: '\F301';
+top:-1px;
 }
 
 .picon-sort:before {
